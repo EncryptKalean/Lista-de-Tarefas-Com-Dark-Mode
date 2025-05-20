@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- FontsAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+<body>
+    <section class="center">
+        <button class="toggle-mode" aria-label="Alternar modo escuro">🌙 / ☀️</button>
+        <h1>lista de Tarefas</h1>
+        <p>organize seu dia com facilidade</p>
+        <input placeholder="hoje eu preciso fazer..." type="text">
+        <button class="addTarefa">adicionar Tarefa</button>
+        <p class="menssage"></p>
+        <p class="contagem"></p>
+        <ul class="lista">
+            <li class="feito">
+                <h3>tarefa</h3>
+                <a>botão de excluir</a>
+            </li>
+            <li class="">
+                <h3>tarefa</h3>
+            </li>
+        </ul>
+        <button class="apagarTudo" style="display: none;">Apagar Tudo</button>
+    </section>
+</body>
+<script src="src/script.js"></script>
+</html>
