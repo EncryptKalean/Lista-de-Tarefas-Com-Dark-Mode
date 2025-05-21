@@ -23,20 +23,22 @@ html,
 body {
   height: 100%;
   background-color: var(--cortema-2);
-  align-content: center;
+  /* align-content: center; */
 }
 
 body {
-  padding: 2%;
+  padding: 2% 2% 0;
   height: auto;
   min-height: 100dvh;
   color: var(--cortema-texto);
 }
 
+main{min-height: 90dvh;}
+
 .center {
   background-color: white;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   border-radius: 20px;
   text-align: center;
   padding: 1%;
@@ -88,10 +90,6 @@ li:hover {
   border-radius: 20px;
   border-color: var(--cortema-texto);
   justify-self: right;
-}
-
-ul.lista{
-  overflow-y: scroll !important;
 }
 
 li {
@@ -195,7 +193,7 @@ ul.dark-mode li h3 {
 /* Footer */
 
 footer {
-  margin-top: 100px;
+  margin: 10px -2% 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
