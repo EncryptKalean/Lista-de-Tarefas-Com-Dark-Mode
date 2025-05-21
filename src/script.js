@@ -39,9 +39,9 @@ renderizar()
 function renderizar() {
     if (tarefas.length < 1) {
         contagem.textContent = `sem tarefas...`
+        apagar_btn.style.display = 'none'
     }
     else if(tarefas.length == 1){
-        apagar_btn.style.display = 'none'
         contagem.textContent = `você tem ${tarefas.length} tarefa`
     }
     else {
@@ -64,8 +64,8 @@ function renderizar() {
 
 apagar_btn.addEventListener('click', () => {
     if(confirm('Tem certeza que deseja apagar todas as tarefas?')){
-        localStorage.removeItem('tarefas')
-        tarefas = []
+        localStorage.removeItem('tarefas');
+        tarefas = [];
         renderizar();
     }
 })
