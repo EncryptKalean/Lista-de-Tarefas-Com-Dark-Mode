@@ -89,6 +89,10 @@ function apagarTudo(){
     renderizar();
 }
 
+function cancelar(){
+    container_confirmacao.style.display = 'none'
+}
+
 
 //---------- Modifica as tarefas (ex: deletar ou riscar como feito) ----------
 lista.addEventListener('click',(click)=>{
@@ -144,4 +148,5 @@ function darkmode(){
         document.querySelector('.center').classList.add('dark-mode')
         document.querySelector('.apagar_confirm').classList.add('dark-mode')
     }
+
 }
