@@ -1,0 +1,40 @@
+/* Footer */
+
+footer {
+  margin: 10px -2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: inherit;
+  border-top: 1px solid var(--cortema-texto);
+  letter-spacing: 1px;
+  color: inherit;
+}
+
+
+footer p, footer a{
+  color: inherit;
+  margin: 0;
+}
+
+footer i {
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: inherit;
+}
+
+footer i:hover {
+  background-color: var(--cortema-1);
+  color: white;
+}
+
+.redesSociais > *{
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+  }
+}

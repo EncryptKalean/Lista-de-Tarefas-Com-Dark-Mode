@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Poppins, serif;
+  font-style: italic;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+:root {
+  --cortema-texto: #333;
+  --cortema-1: #6c63ff;
+  --cortema-2: #eaeaea;
+  --transicao: 1s;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--cortema-2);
+}
+
+body {
+  padding: 2% 2% 0;
+  height: auto;
+  min-height: 100dvh;
+  color: var(--cortema-texto);
+}
+
+main{
+  min-height: 90dvh;
+  align-content: center;
+}
+
+.center, .apagar_confirm{
+  position: relative;
+  background-color: white;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1%;
+  box-shadow: 0 0 3px var(--cortema-texto);
+}
+
+h1,
+p,
+input,
+button {
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+input,
+button {
+  width: 60%;
+  background: transparent;
+  border: 1px solid var(--cortema-1);
+  height: 40px;
+  padding: 0 10px;
+  margin: 20px 10px;
+}
+
+button {
+  width: 20%;
+  background-color: var(--cortema-1);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover,
+li:hover {
+  opacity: 0.8;
+}
+
+.menssage {
+  color: var(--cortema-1) !important;
+}
+
+.apagarTudo {
+  margin: 0 20px;
+  width: 100px;
+  background-color: red;
+  border-radius: 20px;
+  border-color: var(--cortema-texto);
+  justify-self: right;
+}
+
+li {
+  background-color: var(--cortema-2);
+  border: 1px solid var(--cortema-1);
+  padding: 0.8%;
+  border-radius: 5px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.feito {
+  background-color: transparent !important;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+li h3 {
+  width: 100%;
+  cursor: pointer;
+  overflow-y: auto;
+}
+
+li a > * {
+  cursor: pointer;
+  background-color: red;
+  color: var(--cortema-2);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/*--------- Dark Mode ---------*/
+
+h1,
+h3,
+p,
+.center,
+.apagar_confirm,
+body,
+li,
+button,
+a,
+ul {
+  transition: color var(--transicao), background-color var(--transicao),
+    opacity var(--transicao);
+}
+
+.toggle-mode {
+  text-align: center;
+  margin: 0;
+  display: block;
+  width: 90px;
+  border-radius: 20px;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: var(--cortema-2);
+}
+
+section.dark-mode {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 3px white;
+}
+
+section.dark-mode * {
+  color: var(--cortema-2);
+}
+
+ul.dark-mode li {
+  background-color: var(--cortema-texto);
+  color: var(--cortema-2);
+}
+
+ul.dark-mode li h3 {
+  color: var(--cortema-2);
+}
+
+/* Confirmação para apagar */
+
+.apagar_confirm{
+  display: none;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  padding: 5%;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid var(--cortema-1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.apagar_confirm > div a{
+  background-color: red;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.apagar_confirm > div a:nth-of-type(1){
+  background-color: green;
+}

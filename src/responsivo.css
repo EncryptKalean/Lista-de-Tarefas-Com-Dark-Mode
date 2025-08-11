@@ -1,0 +1,21 @@
+/* --------- Responsividade -------------*/
+
+@media screen and (max-width: 768px) {
+  input,
+  button,
+  .apagarTudo {
+    width: 95%;
+    margin: 10px 0;
+    justify-self: center;
+    border-radius: 10px;
+  }
+
+  .toggle-mode {
+    margin: 0 0 20px;
+  }
+
+  li a > * {
+    padding: 10px;
+    border-radius: 50%;
+  }
+}

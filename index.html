@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tarefas</title>
 
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css"> 
+    <link rel="stylesheet" href="src/footer.css"> 
+    <link rel="stylesheet" href="src/responsivo.css"> 
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +38,14 @@
                 </li>
             </ul>
             <button class="apagarTudo" style="display: none;">Apagar Tudo</button>
+
+            <section class="apagar_confirm">
+            <p>Tem certeza que deseja apagar todas as tarefas?</p>
+            <div>
+                <a id="confirmacao_btn" onClick="apagarTudo()">tenho</a>
+                <a>melhor não</a>
+            </div>
+        </section>
         </section>
     </main>
     
@@ -43,11 +53,9 @@
 	<p>Feito por: Kauan Leandro</p>
     <div class="redesSociais">
         <a href="https://github.com/EncryptKalean" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
+          <i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/kauanleandro/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
+          <i class="fa-brands fa-linkedin"></i></a>
     </div>
 </footer>
 </body>
